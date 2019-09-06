@@ -25,6 +25,15 @@ Python’s functions are first-class objects.
  - Lambda functions can’t use regular Python statements and always include an implicit return statement.
  - Always ask yourself: Would using a regular (named) function or a list comprehension offer more clarity?
 
+3.4 Fun With *args and **kwargs
+ - They allow a function to accept optional arguments, so you can create flexible APIs in your modules and classes
+ - If we call the function with additional arguments, args will collect extra positional arguments as a tuple because the parameter name has a * prefix.
+ - Likewise, kwargs will collect extra keyword arguments as a dictionary because the parameter name has a ** prefix.
+ - Both args and kwargs can be empty if no extra arguments are passed to the function.
+ - *args and **kwargs let you write functions with a variable number of arguments in Python.
+ - *args collects extra positional arguments as a tuple. **kwargs collects the extra keyword arguments as a dictionary.
+ - The actual syntax is * and **. Calling them args and kwargs is just a convention (and one you should stick to).
+
 3.5 Function Argument Unpacking
  - * can be used to unpack the lists, tuples and generators in Python.
  - It can be used to pass whole lists, tuples or generators to a Python functions as an argument
