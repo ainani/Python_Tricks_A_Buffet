@@ -33,6 +33,9 @@
  - The hash value is derived from the key as a numeric value of a fixed length that uniquely identifies the key.
  - This allows for fast lookups. It’s much quicker to search for a key’s  numeric hash value in a lookup table instead of comparing the full key object against all other keys and checking for equality.
  - hash collision : A situation where 2 or more keys having same hash value
+ - in-built id() method will give unique hash id of object
+ - Dictionaries check for equality and compare the hash value to determine if two keys are the same
+ - Dictionaries treat keys as identical if their __eq__ comparison result says they’re equal and their hash values are the same.
 
 7.5 So Many Ways to Merge Dictionaries
  - Using used defined method to merge dicts

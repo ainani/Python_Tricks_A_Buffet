@@ -20,6 +20,10 @@ class AlwaysEquals:
     def __hash__(self):
         return id(self)
 
+class SameHash:
+    def __hash__(self):
+        return 1                             # Always return hash id as 1
+
 if __name__ == "__main__":
     dict1 = {True: 'yes', 1: 'no', 1.0: 'maybe'}
     print dict1        # True == 1.0 == 1 (so here all keys of a dictionary are equal)
@@ -36,5 +40,14 @@ if __name__ == "__main__":
     print AlwaysEquals() == AlwaysEquals()
     print AlwaysEquals() == 7
     print AlwaysEquals() == 'a'
+    objects = [AlwaysEquals(), AlwaysEquals(), AlwaysEquals()]
+    print [hash(obj) for obj in objects]
+    print {AlwaysEquals(): 'yes', AlwaysEquals(): 'no'}
 
-    print [hash(AlwaysEquals), hash(AlwaysEquals), hash(AlwaysEquals)]
+    a = SameHash()                 
+    b = SameHash()
+
+    print ('\na=' + str(a) + '\nb=' + str(b) + '  and\na == b is ' + str(a == b))                           # Since a != b it will return as false
+    print (hash(a), hash(b))                                                                                # but there has values are equal
+
+    print (hash(True), hash(1), hash(1.0))                      # Hash value of all 3 is equal
