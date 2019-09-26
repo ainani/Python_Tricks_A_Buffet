@@ -20,3 +20,5 @@
  - The : “sushi operator” is not only useful for selecting sublists of elements within a list. It can also be used to clear, reverse, and copy lists.
  - Creating a shallow copy means that only the structure of the elements is copied, not the elements themselves. Both copies of the list share the same instances of the individual elements.
  - If you need to duplicate everything, including the elements, then you’ll need to create a deep copy of the list. Python’s built-in copy module will come in handy for this.
+
+ - 
