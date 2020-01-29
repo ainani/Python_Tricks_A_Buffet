@@ -40,7 +40,8 @@
  - String objects are space-efficient because they’re tightly packed and they specialize in a single data type.
  - If you’re storing Unicode text, you should use them. Because strings are immutable in Python, modifying a string requires creating a modified copy. 
  - The closest equivalent to a “mutable string” is storing individual characters inside a list
+ - Strings are recursive data structures, means a string is collections of single character string
 
  bytes – Immutable Arrays of Single Bytes
  - Bytes objects are immutable sequences of single bytes (integers in the range of 0 <= x <= 255)
- - 
+ - Conceptually they are similar to str objects
