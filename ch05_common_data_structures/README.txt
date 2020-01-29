@@ -1,4 +1,4 @@
-5.1 Dictionaries, Maps, and Hashtables
+﻿5.1 Dictionaries, Maps, and Hashtables
  - Centralized data structure in Python stores arbitrary number of objects mapped using key
  - Often called maps, hashmaps, lookup tables, or associative arrays 
  - fast lookup, insertion and deletion of objects using key 
@@ -45,3 +45,10 @@
  bytes – Immutable Arrays of Single Bytes
  - Bytes objects are immutable sequences of single bytes (integers in the range of 0 <= x <= 255)
  - Conceptually they are similar to str objects
+ - space eficient just like strings
+ - bytes can be unpacked into "mutable byte array" data type called bytearray
+ - bytes must be in range(0, 256)
+
+ bytearray – Mutable Arrays of Single Bytes
+ - mutable sequeuce of integers in range of 0 to 255
+ - same as bytes objects with only difference that bytearray are mutable

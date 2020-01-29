@@ -1,4 +1,4 @@
-6.1 Writing Pythonic Loops
+﻿6.1 Writing Pythonic Loops
  - Iterators in Python can return more than just one value. They can return tuples with an arbitrary number of values that can then be unpacked right inside the for-statement 
  - Python’s for-loops are really “for-each” loops that can iterate directly over items from a container or sequence.
 
